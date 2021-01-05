@@ -1,8 +1,7 @@
 <!-- 按钮 -->
 <template>
   <div>
-    <el-button :type='btnType' icon="el-icon-check">{{ btnText }}</el-button>
-    <el-button type="primary">{{ btnText }}</el-button>
+    <el-button :type='btnType' :icon="btnIcon">{{ btnText }}</el-button>
   </div>
 </template>
 
@@ -12,14 +11,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
 
   props: {
-    size: {
-      type: String,
-      default: "middle",
-    },
-    color: {
-      type: String,
-      default: "goon",
-    },
+    
     btnText: {
       type: String,
       default: "",
@@ -28,6 +20,10 @@ export default defineComponent({
       type: String,
       default: "",
     },
+    btnIcon:{
+      type: String,
+      default:''
+    }
   },
   data() {
     return {};

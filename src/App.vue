@@ -1,27 +1,21 @@
 <template>
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-  <Button :btnText="btn.btnText" :btnType="goon"/>
+  <Button :btnText="btn.btnText" :btnType="btn.btnType" :btnIcon="btn.btnIcon"/>
+  <Button :btnText="btnCancel.btnText" :btnType="btnCancel.btnType" :btnIcon="btnCancel.btnIcon"/>
 </template>
-
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
 import Button from "./components/Button.vue";
-import { ref, reactive } from "vue";
+import { reactive } from "vue";
 export default {
   name: "App",
   data() {
-    return{
-      
-    }
+    return {};
   },
   setup() {
-    const count = ref(0);
-    const btn = reactive({ btnText: "确定" });
-    const goon =ref('goon')
+    const btn = reactive({ btnText: "确定",btnIcon:'el-icon-check',btnType:'goon' });
+    const btnCancel =  reactive({ btnText: "取消",btnIcon:'' ,btnType:'cancel' });
     return {
-      count,
       btn,
-      goon
+      btnCancel
     };
   },
 
