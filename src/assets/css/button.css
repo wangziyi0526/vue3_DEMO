@@ -1,0 +1,38 @@
+.el-button--goon.is-active,
+.el-button--goon:active {
+  background: #20B2AA;
+  border-color: #20B2AA;
+  color: #fff;
+}
+
+.el-button--goon:focus,
+.el-button--goon:hover {
+  background: #48D1CC;
+  border-color: #48D1CC;
+  color: #fff;
+}
+
+.el-button--goon {
+  color: #FFF;
+  background-color: #20B2AA;
+  border-color: #20B2AA;
+}
+.el-button--primary.is-active,
+.el-button--primary:active {
+background: #007E7E;
+border-color: #007E7E;
+color: #fff;
+}
+
+.el-button--primary:focus,
+.el-button--primary:hover {
+background: #007E7E;
+border-color: #007E7E;
+color: #fff;
+}
+
+.el-button--primary {
+color: #FFF;
+background-color: #007E7E;
+border-color: #007E7E;
+}
