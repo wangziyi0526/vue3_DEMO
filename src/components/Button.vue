@@ -1,7 +1,7 @@
 <!-- 按钮 -->
 <template>
   <div>
-    <el-button type=`$btnType` icon="el-icon-check">{{ btnText }}</el-button>
+    <el-button :type='btnType' icon="el-icon-check">{{ btnText }}</el-button>
     <el-button type="primary">{{ btnText }}</el-button>
   </div>
 </template>
@@ -44,5 +44,4 @@ export default defineComponent({
 })
 </script>
 <style scoped>
-@import "../assets/css/button.css";
 </style>
