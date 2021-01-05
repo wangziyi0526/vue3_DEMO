@@ -1,10 +1,10 @@
 <!-- 布局 -->
 <template>
-  <div style="100%">
+  <div class="layout">
     <el-container>
-      <el-aside width="200px">Aside</el-aside>
+      <el-header>头部组件</el-header>
       <el-container>
-        <el-header>Header</el-header>
+        <el-aside width="200px">侧边栏</el-aside>
         <el-main>Main</el-main>
       </el-container>
     </el-container>
@@ -29,37 +29,6 @@ export default defineComponent({
   methods: {},
 });
 </script>
-<style  scoped>
-.el-header,
-.el-footer {
-  background-color: #b3c0d1;
-  color: #333;
-  text-align: center;
-  line-height: 60px;
-}
+<style scoped>
 
-.el-aside {
-  background-color: #d3dce6;
-  color: #333;
-  text-align: center;
-  line-height: 200px;
-}
-
-.el-main {
-  background-color: #e9eef3;
-  color: #333;
-  text-align: center;
-  line-height: 160px;
-}
-
-body > .el-container {
-  margin-bottom: 40px;
-}
-
-
-.el-container .el-aside {
-  line-height: 260px;
-}
-
- 
 </style>

@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <Button
+    <!-- <Button
       :btnText="btn.btnText"
       :btnType="btn.btnType"
       :btnIcon="btn.btnIcon"
@@ -9,13 +8,12 @@
       :btnText="btnCancel.btnText"
       :btnType="btnCancel.btnType"
       :btnIcon="btnCancel.btnIcon"
-    />
+    /> -->
     <Layout />
-  </div>
 </template>
 <script>
-import Button from "./components/Button.vue";
-import Layout from "./components/Layout.vue";
+// import Button from "./components/Button.vue";
+import Layout from "./components/Layout"
 
 import { reactive } from "vue";
 export default {
@@ -41,11 +39,12 @@ export default {
   },
 
   components: {
-    Button,
+    // Button,
     Layout,
   },
 };
 </script>
 
 <style>
+
 </style>
