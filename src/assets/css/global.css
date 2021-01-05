@@ -1,4 +1,5 @@
 @import "./button.css";
+@import "../less/index.less";
 html,body,#app{
     width: 100%;
     height: 100%;

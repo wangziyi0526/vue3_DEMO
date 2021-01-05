@@ -5,7 +5,9 @@
       <el-header>头部组件</el-header>
       <el-container>
         <el-aside width="200px">侧边栏</el-aside>
-        <el-main>Main</el-main>
+        <el-main>
+          <Table />
+        </el-main>
       </el-container>
     </el-container>
   </div>
@@ -13,13 +15,15 @@
 
 <script>
 import { defineComponent } from "vue";
-
+import Table from "./Table"
 export default defineComponent({
   data() {
     return {};
   },
 
-  components: {},
+  components: {
+    Table
+  },
 
   computed: {},
 
@@ -29,6 +33,4 @@ export default defineComponent({
   methods: {},
 });
 </script>
-<style scoped>
-
-</style>
+ 
